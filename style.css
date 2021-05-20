@@ -1,0 +1,35 @@
+.search{
+    display: flexbox;
+    text-align: center;
+
+}
+
+.grid{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.item{
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+
+
+}
+/* 
+.sell{
+    display: flexbox;
+    text-align: center;
+    
+}
+
+.form{
+    display: flexbox;
+    border: solid;
+    width: 50%;
+    text-align:center;
+} */

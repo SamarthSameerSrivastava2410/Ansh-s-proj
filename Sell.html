@@ -1,0 +1,73 @@
+<html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+<script src="js/firebase.js"></script>
+
+<head>
+    <title>
+        PLX Sell Your Item
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <br>
+    <center>
+        <u>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"><b>Sell your Item!</b>
+            </h1>
+        </u>
+    </center>
+    <br>
+    <script>
+        var name;
+        var item = new Object();
+        // Get Elements by ID
+        itemName = document.getElementById('name');
+    </script>
+    <div class="form">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input oninput="item.name = this.value" type="text" id="name" name="name"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                </div>
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="email" class="leading-7 text-sm text-gray-600">Price (in ₹)</label>
+                        <input oninput="item.price = this.value" type="number" id="price" name="price"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                    <div class="relative">
+                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea oninput="item.description = this.value" type="description" id="description"
+                            name="description"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <br>
+                    <input type="file" id="myfile" name="myfile" accept="image/*">
+                </div>
+                <div class="p-2 w-full">
+                    <button
+                        class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
